@@ -176,10 +176,10 @@ section as well.")
     ))
 
 (defmacro xrdb-safe (&rest body)
-  ;; safely execute BODY, return nil if an error occurred
-  (` (condition-case nil
-         (progn (,@ body))
-       (error nil))))
+  ; safely execute BODY, return nil if an error occurred
+  `(condition-case nil
+       (progn (,@ body))
+     (error nil)))
 
 (defsubst xrdb-skip-to-separator ()
   ;; skip forward from the beginning of the line to the separator
