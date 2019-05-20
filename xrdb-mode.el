@@ -136,7 +136,6 @@ section as well.")
 (defconst xrdb-comment-re "^[ \t]*[!]"
   "Regular expression describing the beginning of a comment line.")
 
-
 
 ;; utilities
 (defun xrdb-point (position)
